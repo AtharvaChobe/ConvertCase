@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=The+Girl+Next+Door&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: aqua;
+    height: 60px;
+    justify-content: space-between;
+    font-family: var(--font2);
+}
+.navbar ul{
+    display: flex;   
+    justify-content: center;
+    padding: 15px 0px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin: 0px 60px;
+    transition: all 0.5s ease-out;
+}
+
+.navbar ul li a:hover{
+    color: brown;
+    font-size: 27px;
+}
+

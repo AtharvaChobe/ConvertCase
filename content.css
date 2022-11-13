@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=The+Girl+Next+Door&display=swap');
+:root{
+    --font1:'The Girl Next Door', cursive;
+    --font2:'Baloo Bhai 2', cursive;
+ }
+
+body{
+    background-color: #E2D1F9;
+    padding: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+ .content{
+    display: flex;
+    align-items: center;
+ }
+
+ .content textarea{
+    border:none;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 10px 10px 30px #80808084;
+    width: 60%;
+    height: 200px;
+    max-width: 70%;
+    max-height: 90%;
+ }
+
+ .btn{
+    height: 60px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color:#E2D1F9;
+    background-color: #317773;
+    margin-left: 40px;
+    cursor: pointer;
+    font-family: var(--font2);
+    font-size: larger;
+    transition: all ease-in-out 0.3s;
+ }
+
+.btn:hover{
+    background-color: #029c95;
+    color: black;
+    border-radius: 30px;
+}
+
+.btn:active{
+    background-color: #1e4f4d;
+}
+
+ p{
+    font-family: var(--font2);
+    font-size: 20px;
+    border:none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    width: 295px;
+    height: 55px;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 10px 10px 30px #80808084;
+ }
+
+ h1{
+    color: #317773;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    margin:0px 0px 80px 0px;
+    /* border: 2px solid red; */
+    min-height: 50px;
+    max-height: 178px;
+    /* padding-top: 50px; */
+ }
+ h1:hover{
+    font-size: 0px;
+ }
+ h1:hover:after{
+    content: attr(data-hover);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    /* padding-top: 50px; */
+ }
+
+/* Footer Section */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #317773;
+    height: 150px;
+    width: 100%;
+    margin-top: 80px;
+    color: #E2D1F9;
+    font-family: var(--font2);
+}
+
+.footer h2 a{
+    text-decoration: none;
+    color: #ffff03;
+}
+
+.footer h3 img{
+    height: 18px;
+    width: 18px;
+}

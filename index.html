@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Convert Case</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="content.css">
+  </head>
+  <body>
+    <!-- Heading -->
+    <h1 data-hover=" cAsE cOnVeRtEr "> Case converteR </h1>
+    <!-- Main Section -->
+    <div class="content">
+
+        <textarea placeholder="Type here..."></textarea>
+        <button type="button" id = "sentececase" class="btn">Sentence case</button>
+        <button type="button" id = "lowercase" class="btn">lower case</button>
+        <button type="button" id = "uppercase" class="btn">UPPER CASE</button>
+        
+    </div>
+    <p>Character Count : <span id = "charactercount"></span> </p>
+    <!-- Footer Section -->
+    <div class="footer">
+        <h2>Developed by <a href="mailto:atharvachobe72@gmail.com"><b> Atharva Chobe</b></a> </h2>
+        <h3>Made with Love in <img id="image" src="./india.png" alt=""> India</h3>
+    </div>
+
+    <script type="text/javascript">
+
+      setInterval(function(){
+        textarea();
+        charactercount();
+      }, 0);
+
+      function textarea(){
+        return $('textarea').val();
+      }
+
+      function charactercount(){
+        $('#charactercount').text(textarea().length);
+      }
+
+      $('#sentececase').click(function(){
+        var sentececase = textarea().toLowerCase().replace(/(^\s*\w|[\.\!\?]\s*\w)/g,
+                          function(c){
+                            return c.toUpperCase()
+                          });
+        $('textarea').val(sentececase);
+      })
+
+      $('#lowercase').click(function(){
+        $('textarea').val(textarea().toLowerCase());
+      })
+
+      $('#uppercase').click(function(){
+        $('textarea').val(textarea().toUpperCase());
+      })
+
+    </script>
+  </body>
+</html>
